@@ -14,7 +14,7 @@ const Forms = () => {
   const DAYS_IN_MS = 20 * 24 * 60 * 60 * 1000; //exemplo de calculo de 20 dias
   const NOW_IN_MS = new Date().getTime();
 
-  const dateTimeAfterThreeDays = NOW_IN_MS + DAYS_IN_MS;
+  const dateTime = NOW_IN_MS + DAYS_IN_MS;
 
   return (
     <div>
@@ -29,7 +29,7 @@ const Forms = () => {
       </form>
       
       < div  className={styles.counter}> 
-      <CountdownTimer targetDate={dateTimeAfterThreeDays} />
+      <CountdownTimer targetDate={dateTime} />
       </div>
       </center>
     </div>
